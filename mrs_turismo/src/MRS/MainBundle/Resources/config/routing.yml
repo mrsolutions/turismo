@@ -1,0 +1,19 @@
+mrs_main_homepage:
+    path:     /
+    defaults: { _controller: MRSMainBundle:Default:index }
+
+mrg_principal:
+    path:     /principal
+    defaults: { _controller: MRSMainBundle:Navbar:principal }
+        
+mrg_empresa:
+    path:     /empresa
+    defaults: { _controller: MRSMainBundle:Navbar:empresa }
+        
+mrg_turismo:
+    path:     /turismo/{pueblo}
+    defaults: { _controller: MRSMainBundle:Navbar:turismo, pueblo: Geldo }
+    
+mrg_contacto:
+    path:     /contacto
+    defaults: { _controller: MRSMainBundle:Contacto:nuevo }

@@ -1,0 +1,55 @@
+{% extends "::base.html.twig" %} 
+
+{% block title %}MRGeomatics - Contacto{% endblock %}
+
+{% block body %}
+<div class="container theme-showcase" role="main">
+	<br><br><br>
+		<h4>Contacto:</h4>
+
+	<p>- En estos momentos nos encontramos en fase de desarrollo, pero atendemos igualmente sus 
+	peticiones. Por favor diríjase a:<br></p>
+	<table>
+	<tr>
+		<td>Carlos Moros Serrano</td>
+		<td><i class="fa fa-envelope"></i></td>
+		<td>carlostopo@hotmail.es</td>
+		<td><i class="fa fa-phone"></i></td>
+		<td>España: (+34) 639408845</td>
+		<td>Alemania: (+49) 15903555569</td>
+	</tr>
+	<tr>
+		<td>Natanael Recuenco Díez</td>
+		<td><i class="fa fa-envelope"></i></td>
+		<td>emaildenata@gmail.com</td>
+		<td><i class="fa fa-phone"></i></td>
+		<td>España: (+34) 687510613</td>
+		<td>Austria: (+43) 68181389552</td>
+	</tr>
+	</table>
+	
+	<div><p>También puede rellenar nuestro formulario de contacto</p>
+	
+	    {{ form_start(form) }}  
+		<div class="form_error">{{ form_errors(form) }}
+		
+		<div class="form_error">{{ form_errors(form.nombre) }}</div>
+		<div class="form_label">{{ form_label(form.nombre) }}</div>
+		<div class="form_input">{{ form_widget(form.nombre) }}</div>
+		<br>
+		
+		<div class="form_error">{{ form_errors(form.email) }}</div>
+		<div class="form_label">{{ form_label(form.email) }}</div>
+		<div class="form_input">{{ form_widget(form.email) }}</div>
+		<br>
+		
+		<div class="form_error">{{ form_errors(form.mensaje) }}</div>
+		<div class="form_label">{{ form_label(form.mensaje) }}</div>
+		<div class="form_input">{{ form_widget(form.mensaje) }}</div>
+		<br>
+		
+		{{ form_widget(form.enviar) }}
+		{{ form_end(form) }}
+	</div>
+</div>
+{% endblock %}
