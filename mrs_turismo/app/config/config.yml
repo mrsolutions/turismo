@@ -65,8 +65,8 @@ doctrine:
 
 # Swiftmailer Configuration
 swiftmailer:
-    transport: "%mailer_transport%"
+    transport: gmail
     host:      "%mailer_host%"
-    username:  "%mailer_user%"
-    password:  "%mailer_password%"
+    username:  moresolutions.info@gmail.com
+    password:  morosrecuenco87
     spool:     { type: memory }

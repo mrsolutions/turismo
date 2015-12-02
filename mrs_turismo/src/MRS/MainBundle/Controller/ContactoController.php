@@ -31,8 +31,8 @@ class ContactoController extends Controller
 					'mensaje' => $mensaje
 			);
 			
-			$this->sendUsConfirmAction($inputs);
-			$this->sendUserConfirmAction($inputs);
+			$this->sendUsConfirmAction($allinputs);
+			$this->sendUserConfirmAction($allinputs);
 			return $this->render('MRSMainBundle:FAQ:confirmacion.html.twig',$allinputs);
 		}
 		return $this->render('MRSMainBundle:mrg:contacto.html.twig', array('form'=> $form->createView()));		
